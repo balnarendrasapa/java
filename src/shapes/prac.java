@@ -35,10 +35,10 @@ class Square extends Rectangle {
 }
 
 public class prac {
-    public static void printArea(Shape s) {
+    private static void printArea(Shape s) {
         System.out.println(s.getArea());
     }
-    public static void printPerimeter(Shape s) {
+    private static void printPerimeter(Shape s) {
         System.out.println(s.getPerimeter());
     }
     public static void main(String[] args) {
