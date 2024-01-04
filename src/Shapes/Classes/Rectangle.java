@@ -1,6 +1,6 @@
-package shapes;
+package Shapes.Classes;
 
-import shapes_interfaces.Shape;
+import Shapes.Interfaces.Shape;
 
 public class Rectangle implements Shape {
     private final double length;

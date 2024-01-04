@@ -1,7 +1,7 @@
-import shapes.Circle;
-import shapes.Rectangle;
-import shapes_interfaces.Shape;
-import shapes.Square;
+import Shapes.Classes.Circle;
+import Shapes.Classes.Rectangle;
+import Shapes.Interfaces.Shape;
+import Shapes.Classes.Square;
 
 public class shapes {
     private static void printArea(Shape s) {

@@ -1,4 +1,4 @@
-package shapes_interfaces;
+package Shapes.Interfaces;
 
 public interface Shape {
     double getArea();
