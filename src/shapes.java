@@ -1,36 +1,32 @@
 import Shapes.Classes.Circle;
 import Shapes.Classes.Rectangle;
+import Shapes.Classes.RightTriangle;
 import Shapes.Interfaces.Shape;
 import Shapes.Classes.Square;
 
 public class shapes {
-    private static void printArea(Shape s) {
+    private static void printDetails(Shape s) {
+        System.out.println(s.getInfo());
         System.out.println("Area: " + s.getArea());
-    }
-    private static void printPerimeter(Shape s) {
         System.out.println("Perimeter: " + s.getPerimeter());
+        System.out.println();
     }
     public static void main(String[] args) {
         Circle s = new Circle(15);
         Rectangle r = new Rectangle(5, 10);
         Square sq = new Square(5);
+        RightTriangle rt = new RightTriangle(3, 4);
 
         System.out.println("Circle: ");
-        System.out.println("Radius = " + s.getRadius());
-        printArea(s);
-        printPerimeter(s);
-        System.out.println();
+        printDetails(s);
 
         System.out.println("Rectangle: ");
-        System.out.println("Length: " + r.getLength());
-        System.out.println("Width: " + r.getWidth());
-        printArea(r);
-        printPerimeter(r);
-        System.out.println();
+        printDetails(r);
 
         System.out.println("Squares: ");
-        System.out.println("Side Length: " + sq.getLength());
-        printArea(sq);
-        printPerimeter(sq);
+        printDetails(sq);
+
+        System.out.println("Right Triangle: ");
+        printDetails(rt);
     }
 }

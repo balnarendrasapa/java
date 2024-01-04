@@ -6,6 +6,11 @@ public class Rectangle implements Shape {
     private final double length;
     private final double width;
 
+    @Override
+    public String getInfo() {
+        return String.format("Length: %f\nWidth: %f", this.length, this.width);
+    }
+
     public double getLength() {
         return length;
     }

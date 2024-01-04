@@ -5,6 +5,10 @@ import Shapes.Interfaces.Shape;
 public class Circle implements Shape {
     private final double radius;
 
+    public String getInfo() {
+        return String.format("Radius: %f", this.radius);
+    }
+
     public double getRadius() {
         return radius;
     }
